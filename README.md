@@ -1,5 +1,5 @@
 # NFS
-fdjfidjf
+fdjfidjf\n
 fd
 fdfd
 df
