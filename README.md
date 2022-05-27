@@ -83,7 +83,7 @@ sudo mkdir -p /mnt/sharedfolder_client
 ```
 - 在客戶端掛載共享目錄
 ```
-sudo mount serverIP:/exportFolder_server /mnt/mountfolder_client
+sudo mount serverIP:/exportFolder_server /mnt/sharedfolder_client
 ```
 # 參考資料
 [NFS WIKI](https://zh.wikipedia.org/zh-tw/%E7%BD%91%E7%BB%9C%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F)
