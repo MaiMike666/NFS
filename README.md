@@ -23,15 +23,15 @@ systemctl status nfs-server
 ```
 - 啟動 NFS 伺服器服務狀態
 ```
-systemctl status nfs-server
+systemctl start nfs-server
 ```
 - 停止 NFS 伺服器服務狀態
 ```
-systemctl status nfs-server
+systemctl stop nfs-server
 ```
 - 重新啟動 NFS 伺服器服務狀態
 ```
-systemctl status nfs-server
+systemctl restart nfs-server
 ```
 ## 建立共享目錄
 - 建立共享目錄
