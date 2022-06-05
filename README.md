@@ -74,7 +74,7 @@ sudo ufw allow from [clientIP or clientSubnetIP] to any port nfs
 ```
 sudo ufw status
 ```
-![img](https://github.com/MaiMike666/NFS-server-and-client/blob/main/img/nfs_ufw_status.png)
+[img](https://github.com/MaiMike666/NFS-server-and-client/blob/main/img/nfs_ufw_status.png)
 # NFS 客戶端安裝
 ## NFS 客戶端
 - NFS 客戶端安裝
