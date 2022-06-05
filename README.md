@@ -36,16 +36,16 @@ systemctl restart nfs-server
 ## 建立共享目錄
 - 建立共享目錄
 ```
-sudo mkdir -p /mnt/sharedfolder
+sudo mkdir -p /mnt/sharedfolder_server
 ```
 我們希望所有客戶端都可以訪問該目錄，因此我們通過以下命令刪除限制的權限
 - 讓該目錄可以被任何人訪問
 ```
-sudo chown nobody:nogroup /mnt/sharedfolder
+sudo chown nobody:nogroup /mnt/sharedfolder_server
 ```
 - 讓該目錄可以被讀取、執行、寫入
 ```
-sudo chmod 777 /mnt/sharedfolder
+sudo chmod 777 /mnt/sharedfolder_server
 ```
 ## 分配客戶端權限
 我們需要為客戶端提供訪問主機服務器的權限。此權限是通過位於系統 /etc 文件夾中的文件。請使用以下命令通過 Nano 編輯器打開此文件
@@ -55,7 +55,7 @@ sudo nano /etc/exports
 ```
 - 在文件中添加以下設定
 ```
-/mnt/sharedfolder clientIP(rw,sync,no_subtree_check)
+/mnt/sharedfolder_server clientIP(rw,sync,no_subtree_check)
 ```
 ```
 # rw: 可以進行讀寫操作
@@ -83,7 +83,7 @@ sudo mkdir -p /mnt/sharedfolder_client
 ```
 - 在客戶端掛載共享目錄
 ```
-sudo mount serverIP:/mnt/exportfolder_server /mnt/sharedfolder_client
+sudo mount serverIP:/mnt/sharedfolder_server /mnt/sharedfolder_client
 ```
 # 參考資料
 [NFS WIKI](https://zh.wikipedia.org/zh-tw/%E7%BD%91%E7%BB%9C%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F)
