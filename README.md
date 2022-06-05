@@ -90,7 +90,7 @@ sudo mkdir -p /mnt/sharedfolder_client
 sudo mount serverIP:/mnt/sharedfolder_server /mnt/sharedfolder_client
 ```
 # 最終完成畫面
-[img](https://github.com/MaiMike666/NFS-server-and-client/blob/main/img/nfs_f.png)
+![img](https://github.com/MaiMike666/NFS-server-and-client/blob/main/img/nfs_f.png)
 # 參考資料
 [NFS WIKI](https://zh.wikipedia.org/zh-tw/%E7%BD%91%E7%BB%9C%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F)
 
