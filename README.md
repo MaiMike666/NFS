@@ -2,6 +2,7 @@
 B1042002 林子期
 B1042004 王博民
 B1042025 麥俊雲
+# 連結：https://www.youtube.com/watch?v=WP8MdkKlmbI
 # 目錄
 - [NFS 伺服器架設](#nfs-伺服器架設)
   - [NFS 簡單介紹](#nfs-簡單介紹)
